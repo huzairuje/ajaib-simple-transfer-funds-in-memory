@@ -1,0 +1,59 @@
+# Binaries
+bin/
+transfer-service
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test artifacts
+coverage.out
+coverage.html
+*.test
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build artifacts
+*.o
+*.a
+*.so
+
+# Dependency directories
+vendor/
+
+# Go modules
+go.sum
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Mock files
+test/mocks/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
