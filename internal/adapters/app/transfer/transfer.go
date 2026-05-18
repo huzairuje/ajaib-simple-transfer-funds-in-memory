@@ -27,8 +27,8 @@ func (t *transfer) CreateTransfer(ctx context.Context, request entity.CreateTran
 		ToAccountID:   request.To,
 		Amount:        request.Amount,
 		Currency:      request.Currency,
-		FromBalance:   request.FromBalance,
-		ToBalance:     request.ToBalance,
+		FromBalance:   request.FromBalance - request.Amount,
+		ToBalance:     request.ToBalance + request.Amount,
 		Status:        "success",
 	}
 
